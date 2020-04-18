@@ -102,7 +102,7 @@
                 <td class="auto-style14">
                     <asp:TextBox ID="TxtMontoCompra" runat="server" Width="158px"></asp:TextBox>
                 </td>
-                <td class="auto-style9"></td>
+                <td class="auto-style9">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style10">
@@ -117,6 +117,11 @@
                 </td>
             </tr>
         </table>
+        <p>
+            <asp:Button ID="BtnActivos" runat="server" Text="Ver Activos" />
+            <asp:GridView ID="GvActivos" runat="server">
+            </asp:GridView>
+        </p>
     </form>
 </body>
 </html>

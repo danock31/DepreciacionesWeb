@@ -23,11 +23,17 @@ Public Class Empleados
             Lblmensaje.Text = ex.Message
         End Try
 
-        'TxtIdActivo.Text = ""
-        'TxtNombreActivo.Text = ""
-        'TxtFechaCompra.Text = ""
-        'TxtMontoCompra.Text = ""
-        'TxtValorDesecho.Text = ""
+        TxtIdActivo.Text = ""
+        TxtNombreActivo.Text = ""
+        TxtFechaCompra.Text = ""
+        TxtMontoCompra.Text = ""
+        TxtValorDesecho.Text = ""
 
+    End Sub
+
+    Protected Sub BtnActivos_Click(sender As Object, e As EventArgs) Handles BtnActivos.Click
+        obj_activos.LeerActivos()
+        GvActivos.DataSource = obj_activos.Tabla_Activos
+        GvActivos.DataBind()
     End Sub
 End Class

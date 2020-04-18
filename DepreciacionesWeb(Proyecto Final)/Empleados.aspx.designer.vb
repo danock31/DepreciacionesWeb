@@ -165,4 +165,22 @@ Partial Public Class Empleados
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Lblmensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BtnActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnActivos As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GvActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvActivos As Global.System.Web.UI.WebControls.GridView
 End Class
