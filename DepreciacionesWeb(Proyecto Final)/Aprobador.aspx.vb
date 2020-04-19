@@ -41,6 +41,7 @@ Public Class Aprobador
             fecha = TxtFecha.Text
             Año = fecha.Year
             TxtFecha.Text = Año
+            obj_activos.Annos = Año
 
 
             If RbnAprovado.Checked = True Then
@@ -90,5 +91,19 @@ Public Class Aprobador
 
     Protected Sub RbnAprovado_CheckedChanged(sender As Object, e As EventArgs) Handles RbnAprovado.CheckedChanged
 
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnDepreciaciones.Click
+        obj_activos.LeerDepreciacionones()
+        GvDepreciaciones.DataSource = obj_activos.Tabla_Depreciaciones
+        GvDepreciaciones.DataBind()
+    End Sub
+
+    Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
+        Response.Redirect("Login.aspx")
+    End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Response.Redirect("Index.aspx")
     End Sub
 End Class

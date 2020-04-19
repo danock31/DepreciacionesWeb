@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Login.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.Login" %>
 
 <!DOCTYPE html>
+<link href="Estilos.css" rel="stylesheet" /> 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -27,15 +28,15 @@
             <table class="auto-style3">
                 <tr>
                     <td class="auto-style4">
-                        <asp:Label ID="LblUser" runat="server" Text="Usuario:"></asp:Label>
+                        <asp:Label ID="LblUser" runat="server" Text="Usuario:" CssClass="etiquetas"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TxtUsuario" runat="server" Width="160px"></asp:TextBox>
+                        <asp:TextBox ID="TxtUsuario" runat="server" Width="160px" CssClass="Textos"></asp:TextBox>
                     </td>
                     <td class="auto-style5">
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DepreciacionesActivosConnectionString %>" SelectCommand="consultaUsuario" SelectCommandType="StoredProcedure">
                             <SelectParameters>
-                                <asp:ControlParameter ControlID="TxtUsuario" Name="usuario" PropertyName="Text" Type="String" />
+                                <asp:ControlParameter ControlID="TxtUsuario" Name="usuario"  PropertyName="Text" Type="String"  />
                                 <asp:ControlParameter ControlID="TxtContraseña" Name="contraseña" PropertyName="Text" Type="String" />
                             </SelectParameters>
                         </asp:SqlDataSource>
@@ -43,10 +44,10 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:Label ID="LblClave" runat="server" Text="Contraseña:"></asp:Label>
+                        <asp:Label ID="LblClave" runat="server" Text="Contraseña:" CssClass="etiquetas"></asp:Label>
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TxtContraseña" runat="server" Width="146px"></asp:TextBox>
+                        <asp:TextBox ID="TxtContraseña" runat="server" Width="146px" CssClass="Textos"></asp:TextBox>
                     </td>
                     <td class="auto-style5">
                         &nbsp;</td>

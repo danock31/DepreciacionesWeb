@@ -95,6 +95,7 @@
     <Content Include="AgregarEmpleados.aspx" />
     <Content Include="Aprobador.aspx" />
     <Content Include="Empleados.aspx" />
+    <Content Include="Estilos.css" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Solicitud.aspx" />

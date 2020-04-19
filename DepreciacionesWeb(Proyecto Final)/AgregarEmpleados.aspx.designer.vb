@@ -23,6 +23,24 @@ Partial Public Class AgregarEmpleados
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''Label1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblUsuario1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblUsuario1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''LblIdEmpleado control.
     '''</summary>
     '''<remarks>
@@ -122,13 +140,13 @@ Partial Public Class AgregarEmpleados
     Protected WithEvents TxtContraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblMensaje control.
+    '''Button1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblMensaje As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''BtnUsuario control.
@@ -138,4 +156,13 @@ Partial Public Class AgregarEmpleados
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BtnUsuario As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''LblMensaje control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblMensaje As Global.System.Web.UI.WebControls.Label
 End Class

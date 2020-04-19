@@ -1,6 +1,8 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Index.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.Index" %>
 
 <!DOCTYPE html>
+<link href="Estilos.css" rel="stylesheet" /> 
+
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -33,9 +35,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="LblUsuario" runat="server" Text="Label"></asp:Label>
-            <asp:Label ID="LblID" runat="server" Text="Label"></asp:Label>
-        &nbsp;<br />
+        &nbsp;<asp:Label ID="Label1" runat="server" Text="Usuario :" CssClass="etiquetas"></asp:Label>
+            <asp:Label ID="LblUsuario" runat="server" Text="Label" CssClass="etiquetas"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Tipo de Usuario :" CssClass="etiquetas"></asp:Label>
+            <asp:Label ID="LblID" runat="server" Text="Label" CssClass="etiquetas"></asp:Label>
+            <br />
             <table class="auto-style9">
                 <tr>
                     <td class="auto-style3">
@@ -63,6 +67,7 @@
             </table>
             <br />
             <br />
+            <asp:Button ID="Button1" runat="server" Text="Cerrar  Sesión" />
         </div>
         <p>
             &nbsp;</p>

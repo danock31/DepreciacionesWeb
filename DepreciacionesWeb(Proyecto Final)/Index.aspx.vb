@@ -44,4 +44,8 @@
     Protected Sub BtnSolicitud_Click1(sender As Object, e As EventArgs) Handles BtnSolicitud.Click
         Response.Redirect("Solicitud.aspx")
     End Sub
+
+    Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
+        Response.Redirect("Login.aspx")
+    End Sub
 End Class

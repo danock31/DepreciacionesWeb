@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Solicitud.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.Solicitud" %>
 
 <!DOCTYPE html>
+<link href="Estilos.css" rel="stylesheet" /> 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -42,15 +43,15 @@
     <form id="form1" runat="server">
         <div>
         <div>
-            <asp:Label ID="Label2" runat="server" Text="Usuario:"></asp:Label>
-            <asp:Label ID="LblUsuario" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Usuario:" CssClass="etiquetas"></asp:Label>
+            <asp:Label ID="LblUsuario" runat="server" Text="Label" CssClass="etiquetas"></asp:Label>
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label3" runat="server" Text="Codigo Activo"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="Codigo Activo" CssClass="etiquetas"></asp:Label>
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TxtIdActivo" runat="server" Height="16px" Width="182px"></asp:TextBox>
+                        <asp:TextBox ID="TxtIdActivo" runat="server" Height="16px" Width="182px" CssClass="Textos"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" />
@@ -58,19 +59,19 @@
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="Label4" runat="server" Text="Nombre Activo"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text="Nombre Activo" CssClass="etiquetas"></asp:Label>
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TxtNombreActivo" runat="server" Width="182px"></asp:TextBox>
+                        <asp:TextBox ID="TxtNombreActivo" runat="server" Width="182px" CssClass="Textos"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
-                        <asp:Label ID="LblTipoDeActivo" runat="server" Text="Tipo de Activo"></asp:Label>
+                        <asp:Label ID="LblTipoDeActivo" runat="server" Text="Tipo de Activo" CssClass="etiquetas"></asp:Label>
                     </td>
                     <td class="auto-style2">
-                        <asp:DropDownList ID="DdlTipoActivo" runat="server">
+                        <asp:DropDownList ID="DdlTipoActivo" runat="server" CssClass="Textos">
                             <asp:ListItem Value="1">Mobiliario y equipo de oficina</asp:ListItem>
                             <asp:ListItem Value="2">Software y equipo de cómputo</asp:ListItem>
                             <asp:ListItem Value="3">Edificios</asp:ListItem>
@@ -84,28 +85,28 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="LblFecha" runat="server" Text="Fecha de compra"></asp:Label>
+                    <asp:Label ID="LblFecha" runat="server" Text="Fecha de compra" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="TxtFecha" runat="server" Width="166px"></asp:TextBox>
+                    <asp:TextBox ID="TxtFecha" runat="server" Width="166px" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="LblMontoCompra" runat="server" Text="Monto de compra"></asp:Label>
+                    <asp:Label ID="LblMontoCompra" runat="server" Text="Monto de compra" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="TxtMontoCompra" runat="server" Width="168px"></asp:TextBox>
+                    <asp:TextBox ID="TxtMontoCompra" runat="server" Width="168px" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label1" runat="server" Text="Valor de desecho"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Valor de desecho" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style4">
-                    <asp:TextBox ID="TxtValorDesecho" runat="server" Width="167px"></asp:TextBox>
+                    <asp:TextBox ID="TxtValorDesecho" runat="server" Width="167px" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -113,32 +114,32 @@
         <table style="width:100%;">
             <tr>
                 <td class="auto-style6">
-                    <asp:Label ID="Label5" runat="server" Text="Id del Empleado"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="Id del Empleado" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style9">
-                    <asp:TextBox ID="TxtIdEmpleado" runat="server" Width="175px"></asp:TextBox>
+                    <asp:TextBox ID="TxtIdEmpleado" runat="server" Width="175px" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td class="auto-style7"></td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label6" runat="server" Text="Estado"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="Estado" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style10">
-                    <asp:TextBox ID="TxtEstado" runat="server" Width="175px"></asp:TextBox>
+                    <asp:TextBox ID="TxtEstado" runat="server" Width="175px" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="LblIdSolicitud" runat="server" Text="Num Solicitud"></asp:Label>
+                    <asp:Label ID="LblIdSolicitud" runat="server" Text="Num Solicitud" CssClass="etiquetas"></asp:Label>
                 </td>
                 <td class="auto-style10">
-                    <asp:TextBox ID="TxtSolicitud" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TxtSolicitud" runat="server" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Button ID="BtnSolicitud" runat="server" Text="Enviar Solicitud" />
-                    <asp:Label ID="Lblmensaje" runat="server"></asp:Label>
+                    <asp:Label ID="Lblmensaje" runat="server" CssClass="etiquetas"></asp:Label>
                 </td>
             </tr>
         </table>
