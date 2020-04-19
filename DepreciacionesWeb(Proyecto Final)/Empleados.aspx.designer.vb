@@ -59,6 +59,15 @@ Partial Public Class Empleados
     Protected WithEvents TxtIdActivo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BtnBuscar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnBuscar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''LblNombreActivo control.
     '''</summary>
     '''<remarks>
@@ -113,6 +122,15 @@ Partial Public Class Empleados
     Protected WithEvents TxtFechaCompra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''BtnAgregar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnAgregar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''LblMontoCompra control.
     '''</summary>
     '''<remarks>
@@ -129,6 +147,15 @@ Partial Public Class Empleados
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TxtMontoCompra As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''BtnEliminar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnEliminar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Label1 control.
@@ -149,13 +176,13 @@ Partial Public Class Empleados
     Protected WithEvents TxtValorDesecho As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BtnAgregar control.
+    '''BtnModificar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnAgregar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnModificar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Lblmensaje control.

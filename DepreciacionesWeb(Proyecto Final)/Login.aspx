@@ -49,20 +49,13 @@
                         <asp:TextBox ID="TxtContraseña" runat="server" Width="146px"></asp:TextBox>
                     </td>
                     <td class="auto-style5">
-                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DepreciacionesActivosConnectionString %>" SelectCommand="crearUsuario" SelectCommandType="StoredProcedure">
-                            <SelectParameters>
-                                <asp:ControlParameter ControlID="TxtID" Name="id_empleado" PropertyName="Text" Type="Int32" />
-                            </SelectParameters>
-                        </asp:SqlDataSource>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:Label ID="Label1" runat="server" Text="ID"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TxtID" runat="server"></asp:TextBox>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style5">
                         <asp:Button ID="BtnIniciar" runat="server" Text="Iniciar" />
                         </td>

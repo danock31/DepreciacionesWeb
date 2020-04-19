@@ -6,25 +6,21 @@ Public Class Login
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
+
     End Sub
 
     Protected Sub BtnIniciar_Click(sender As Object, e As EventArgs) Handles BtnIniciar.Click
         Dim LeerDB As DataView = DirectCast(SqlDataSource1.Select(DataSourceSelectArguments.Empty), DataView)
-        Dim LeerDB1 As DataView = DirectCast(SqlDataSource2.Select(DataSourceSelectArguments.Empty), DataView)
 
-        If TxtUsuario.Text <> "" And TxtContraseña.Text <> "" And TxtID.Text <> "" Then
+        If TxtUsuario.Text <> "" And TxtContraseña.Text <> "" Then
             If LeerDB.Count > 0 Then
-                If LeerDB1.Count > 0 Then
+                Session("IdUser") = LeerDB(0).Item(2)
+                Session("Usuario") = LeerDB(0).Item(1)
+                Session("ID") = LeerDB(0).Item(0)
 
-
-                    Session("Usuario") = LeerDB(0).Item(0)
-                    Session("ID") = LeerDB1(0).Item(0)
-                    Response.Redirect("Index.aspx")
-                Else
-                    Response.Write("No existe el usuario digitado")
-                End If
+                Response.Redirect("Index.aspx")
             Else
-                Response.Write("No existe el ID digitado")
+                Response.Write("No existe el usuario digitado")
             End If
         Else
             Response.Write("Rellene el espacio vacio")

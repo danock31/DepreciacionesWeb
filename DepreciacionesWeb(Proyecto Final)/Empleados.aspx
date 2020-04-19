@@ -31,17 +31,17 @@
             height: 89px;
         }
         .auto-style13 {
-            width: 293px;
+            width: 289px;
         }
         .auto-style14 {
             height: 23px;
-            width: 293px;
+            width: 289px;
         }
         .auto-style15 {
             width: 298px;
         }
         .auto-style16 {
-            height: 207px;
+            height: 231px;
         }
     </style>
 </head>
@@ -58,7 +58,9 @@
                     <td class="auto-style15">
                         <asp:TextBox ID="TxtIdActivo" runat="server" Width="190px"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" />
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -93,7 +95,9 @@
                 <td class="auto-style13">
                     <asp:TextBox ID="TxtFechaCompra" runat="server" Width="159px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="BtnAgregar" runat="server" Text="Agregar" />
+                    </td>
             </tr>
             <tr>
                 <td class="auto-style11">
@@ -102,7 +106,9 @@
                 <td class="auto-style14">
                     <asp:TextBox ID="TxtMontoCompra" runat="server" Width="158px"></asp:TextBox>
                 </td>
-                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style9">
+                    <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style10">
@@ -112,7 +118,11 @@
                     <asp:TextBox ID="TxtValorDesecho" runat="server" Width="158px"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="BtnAgregar" runat="server" Text="Agregar" />
+                    <asp:Button ID="BtnModificar" runat="server" Text="Modificar" />
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <asp:Label ID="Lblmensaje" runat="server"></asp:Label>
                 </td>
             </tr>
@@ -122,6 +132,8 @@
             <asp:GridView ID="GvActivos" runat="server">
             </asp:GridView>
         </p>
+        <p>
+            &nbsp;</p>
     </form>
 </body>
 </html>

@@ -11,7 +11,7 @@
         <div>
             <asp:Label ID="LblUsuario" runat="server" Text="Label"></asp:Label>
             <asp:Label ID="LblID" runat="server" Text="Label"></asp:Label>
-        </div>
+        &nbsp;</div>
     </form>
 </body>
 </html>
