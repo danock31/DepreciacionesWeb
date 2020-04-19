@@ -4,6 +4,7 @@ Public Class Aprobador
     Dim obj_activos As New Clase_Activo
     Dim fecha As Date
     Dim Año As String
+    Dim cont As Integer = 1
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         LblUsuario.Text = Session("Usuario")
         TxtEstado.Enabled = False
@@ -69,10 +70,10 @@ Public Class Aprobador
                 TxtAños.Text = 7
             End If
 
-
+            obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
             obj_activos.Año = TxtAños.Text
-
             obj_activos.CalcularDepreciacion()
+
 
             If TxtEstado.Text = 1 Then
                 TxtEstado.Text = "Pendiente"
@@ -87,4 +88,7 @@ Public Class Aprobador
         End Try
     End Sub
 
+    Protected Sub RbnAprovado_CheckedChanged(sender As Object, e As EventArgs) Handles RbnAprovado.CheckedChanged
+
+    End Sub
 End Class

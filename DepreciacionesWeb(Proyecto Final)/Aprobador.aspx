@@ -154,13 +154,21 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">
+                    <asp:Label ID="Label1" runat="server" Text="IdDepreciacion"></asp:Label>
+                </td>
                 <td class="auto-style10">
-                    &nbsp;</td>
+                    <asp:TextBox ID="TxtIdDepreciacion" runat="server" Width="175px">1</asp:TextBox>
+                </td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         <table class="auto-style11">
+            <tr>
+                <td class="auto-style12">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             <tr>
                 <td class="auto-style12">
                     <asp:Button ID="Button1" runat="server" Text="Ver Depreciacion" />
@@ -182,11 +190,6 @@
                         <SortedDescendingHeaderStyle BackColor="#383838" />
                     </asp:GridView>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style12">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
