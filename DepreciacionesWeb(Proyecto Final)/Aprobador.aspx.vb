@@ -66,7 +66,7 @@ Public Class Aprobador
             ElseIf DdlTipoActivo.SelectedValue = 3 Then
                 TxtAños.Text = 20
             Else
-                TxtAños.Text = 6
+                TxtAños.Text = 7
             End If
 
 
