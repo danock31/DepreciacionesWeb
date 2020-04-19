@@ -23,13 +23,13 @@ Partial Public Class Aprobador
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Label2 control.
+    '''LblUser control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblUser As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''LblUsuario control.
@@ -50,13 +50,13 @@ Partial Public Class Aprobador
     Protected WithEvents GvSolicitudes As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Label3 control.
+    '''LblIdActivo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblIdActivo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''TxtIdActivo control.
@@ -77,13 +77,13 @@ Partial Public Class Aprobador
     Protected WithEvents BtnBuscar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Label4 control.
+    '''LblNombreActivo control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblNombreActivo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''TxtNombreActivo control.
@@ -113,6 +113,24 @@ Partial Public Class Aprobador
     Protected WithEvents DdlTipoActivo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''LblAños control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAños As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TxtAños control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtAños As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''LblFecha control.
     '''</summary>
     '''<remarks>
@@ -129,6 +147,15 @@ Partial Public Class Aprobador
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TxtFecha As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Lblmensaje control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblmensaje As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''LblMontoCompra control.
@@ -149,13 +176,13 @@ Partial Public Class Aprobador
     Protected WithEvents TxtMontoCompra As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label1 control.
+    '''LblValorDesecho control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblValorDesecho As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''TxtValorDesecho control.
@@ -167,13 +194,13 @@ Partial Public Class Aprobador
     Protected WithEvents TxtValorDesecho As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label5 control.
+    '''LblIDEmpleado control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblIDEmpleado As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''TxtIdEmpleado control.
@@ -185,13 +212,13 @@ Partial Public Class Aprobador
     Protected WithEvents TxtIdEmpleado As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Label6 control.
+    '''LblEstado control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblEstado As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''TxtEstado control.
@@ -221,11 +248,20 @@ Partial Public Class Aprobador
     Protected WithEvents RbnDenegado As Global.System.Web.UI.WebControls.RadioButton
 
     '''<summary>
-    '''Lblmensaje control.
+    '''Button1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Lblmensaje As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GridView1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 End Class

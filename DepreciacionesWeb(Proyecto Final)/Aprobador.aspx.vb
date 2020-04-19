@@ -13,11 +13,15 @@ Public Class Aprobador
         TxtNombreActivo.Enabled = False
         DdlTipoActivo.Enabled = False
         TxtFecha.Enabled = False
+        TxtAños.Enabled = False
 
 
         obj_activos.LeerSolicitudes()
         GvSolicitudes.DataSource = obj_activos.Tabla_Solicitudes
         GvSolicitudes.DataBind()
+
+
+
 
     End Sub
 
@@ -35,7 +39,7 @@ Public Class Aprobador
             TxtFecha.Text = obj_activos.FechaCompra
             fecha = TxtFecha.Text
             Año = fecha.Year
-            Año = TxtFecha.Text
+            TxtFecha.Text = Año
 
 
             If RbnAprovado.Checked = True Then
@@ -55,7 +59,20 @@ Public Class Aprobador
 
             End If
 
+            If DdlTipoActivo.SelectedValue = 1 Then
+                TxtAños.Text = 10
+            ElseIf DdlTipoActivo.SelectedValue = 2 Then
+                TxtAños.Text = 3
+            ElseIf DdlTipoActivo.SelectedValue = 3 Then
+                TxtAños.Text = 20
+            Else
+                TxtAños.Text = 6
+            End If
 
+
+            obj_activos.Año = TxtAños.Text
+
+            obj_activos.CalcularDepreciacion()
 
             If TxtEstado.Text = 1 Then
                 TxtEstado.Text = "Pendiente"
