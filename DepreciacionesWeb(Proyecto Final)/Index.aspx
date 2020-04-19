@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Button ID="BtnSolicitud" runat="server" Height="29px" Text="Solicitar Depreciacion" Width="149px" />
+                        <asp:Button ID="BtnSolicitud" runat="server" Height="26px" Text="Solicitar Depreciacion" Width="147px" />
                     </td>
                     <td class="auto-style6"></td>
                     <td class="auto-style8"></td>

@@ -11,15 +11,18 @@
             BtnAgregraActivos.Enabled = True
             BtnAprobarActivos.Enabled = False
             BtnAgregarEmpleado.Enabled = False
+            BtnSolicitud.Enabled = True
         ElseIf LblID.Text = 2 Then
             LblID.Text = "Aprobador de Depreciaciones"
             BtnAgregraActivos.Enabled = False
             BtnAprobarActivos.Enabled = True
             BtnAgregarEmpleado.Enabled = False
+            BtnSolicitud.Enabled = False
         Else
             BtnAgregraActivos.Enabled = True
             BtnAprobarActivos.Enabled = True
             BtnAgregarEmpleado.Enabled = True
+            BtnSolicitud.Enabled = True
             LblID.Text = "Administrador"
         End If
 
