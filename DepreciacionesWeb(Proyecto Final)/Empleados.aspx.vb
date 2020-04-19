@@ -13,11 +13,12 @@ Public Class Empleados
         Try
             obj_activos.IdActivo = TxtIdActivo.Text
             obj_activos.NombreActivo = TxtNombreActivo.Text
-            obj_activos.FechaCompra = TxtFechaCompra.Text
+            obj_activos.FechaCompra = Calendar1.SelectedDate
             obj_activos.Tipo = DdlTipoActivo.SelectedValue
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text
             obj_activos.IdEmpleado = Session("IDUser")
+            obj_activos.IdEstado = 1
             obj_activos.validarActivo()
 
             obj_activos.AgregarActivo()
@@ -28,7 +29,6 @@ Public Class Empleados
         TxtIdActivo.Text = ""
         TxtNombreActivo.Text = ""
         DdlTipoActivo.SelectedIndex = 0
-        TxtFechaCompra.Text = ""
         TxtMontoCompra.Text = ""
         TxtValorDesecho.Text = ""
 
@@ -46,7 +46,7 @@ Public Class Empleados
         Try
             obj_activos.IdActivo = TxtIdActivo.Text
             obj_activos.NombreActivo = TxtNombreActivo.Text
-            obj_activos.FechaCompra = TxtFechaCompra.Text
+            obj_activos.FechaCompra = Calendar1.SelectedDate
             obj_activos.Tipo = DdlTipoActivo.SelectedValue
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text
@@ -60,7 +60,7 @@ Public Class Empleados
         TxtIdActivo.Text = ""
         TxtNombreActivo.Text = ""
         DdlTipoActivo.SelectedIndex = 0
-        TxtFechaCompra.Text = ""
+
         TxtMontoCompra.Text = ""
         TxtValorDesecho.Text = ""
 
@@ -70,11 +70,12 @@ Public Class Empleados
         Try
             obj_activos.IdActivo = TxtIdActivo.Text
             obj_activos.BuscaActivo()
+            Calendar1.SelectedDate = obj_activos.FechaCompra
             DdlTipoActivo.SelectedValue = obj_activos.Tipo
             TxtValorDesecho.Text = obj_activos.ValorDesecho
             TxtNombreActivo.Text = obj_activos.NombreActivo
             TxtMontoCompra.Text = obj_activos.MontoCompra
-            TxtFechaCompra.Text = obj_activos.FechaCompra
+            obj_activos.FechaCompra = Calendar1.SelectedDate
 
         Catch ex As Exception
             Lblmensaje.Text = ex.Message
@@ -96,7 +97,6 @@ Public Class Empleados
         TxtIdActivo.Text = ""
         TxtNombreActivo.Text = ""
         DdlTipoActivo.SelectedIndex = 0
-        TxtFechaCompra.Text = ""
         TxtMontoCompra.Text = ""
         TxtValorDesecho.Text = ""
     End Sub

@@ -93,7 +93,16 @@
                     <asp:Label ID="LblFecha" runat="server" Text="Fecha de compra"></asp:Label>
                 </td>
                 <td class="auto-style13">
-                    <asp:TextBox ID="TxtFechaCompra" runat="server" Width="159px"></asp:TextBox>
+                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="#999999" CellPadding="4" DayNameFormat="Shortest" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" Height="89px" Width="122px">
+                        <DayHeaderStyle BackColor="#CCCCCC" Font-Bold="True" Font-Size="7pt" />
+                        <NextPrevStyle VerticalAlign="Bottom" />
+                        <OtherMonthDayStyle ForeColor="#808080" />
+                        <SelectedDayStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+                        <SelectorStyle BackColor="#CCCCCC" />
+                        <TitleStyle BackColor="#999999" BorderColor="Black" Font-Bold="True" />
+                        <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" />
+                        <WeekendDayStyle BackColor="#FFFFCC" />
+                    </asp:Calendar>
                 </td>
                 <td>
                     <asp:Button ID="BtnAgregar" runat="server" Text="Agregar" />
@@ -129,7 +138,16 @@
         </table>
         <p>
             <asp:Button ID="BtnActivos" runat="server" Text="Ver Activos" />
-            <asp:GridView ID="GvActivos" runat="server">
+            <asp:GridView ID="GvActivos" runat="server" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+                <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+                <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+                <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
+                <RowStyle BackColor="White" ForeColor="#003399" />
+                <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+                <SortedAscendingCellStyle BackColor="#EDF6F6" />
+                <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
+                <SortedDescendingCellStyle BackColor="#D6DFDF" />
+                <SortedDescendingHeaderStyle BackColor="#002876" />
             </asp:GridView>
         </p>
         <p>

@@ -92,12 +92,29 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AgregarEmpleados.aspx" />
+    <Content Include="Aprobador.aspx" />
     <Content Include="Empleados.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Solicitud.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgregarEmpleados.aspx.designer.vb">
+      <DependentUpon>AgregarEmpleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarEmpleados.aspx.vb">
+      <DependentUpon>AgregarEmpleados.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Aprobador.aspx.designer.vb">
+      <DependentUpon>Aprobador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Aprobador.aspx.vb">
+      <DependentUpon>Aprobador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Empleados.aspx.designer.vb">
       <DependentUpon>Empleados.aspx</DependentUpon>
     </Compile>
@@ -137,6 +154,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Solicitud.aspx.designer.vb">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud.aspx.vb">
+      <DependentUpon>Solicitud.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

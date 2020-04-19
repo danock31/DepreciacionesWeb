@@ -113,13 +113,13 @@ Partial Public Class Empleados
     Protected WithEvents LblFecha As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TxtFechaCompra control.
+    '''Calendar1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtFechaCompra As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Calendar1 As Global.System.Web.UI.WebControls.Calendar
 
     '''<summary>
     '''BtnAgregar control.

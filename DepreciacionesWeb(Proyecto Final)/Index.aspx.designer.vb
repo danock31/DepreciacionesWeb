@@ -39,4 +39,40 @@ Partial Public Class Index
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LblID As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''BtnAgregraActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnAgregraActivos As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''BtnAprobarActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnAprobarActivos As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''BtnAgregarEmpleado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnAgregarEmpleado As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''BtnSolicitud control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnSolicitud As Global.System.Web.UI.WebControls.Button
 End Class
