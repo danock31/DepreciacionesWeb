@@ -2,6 +2,8 @@
 Public Class Aprobador
     Inherits System.Web.UI.Page
     Dim obj_activos As New Clase_Activo
+    Dim fecha As Date
+    Dim Año As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         LblUsuario.Text = Session("Usuario")
         TxtEstado.Enabled = False
@@ -30,12 +32,16 @@ Public Class Aprobador
             TxtMontoCompra.Text = obj_activos.MontoCompra
             TxtIdEmpleado.Text = obj_activos.IdEmpleado
             TxtEstado.Text = obj_activos.IdEstado
-            TxtFecha.Text = obj_activos.IdEstado
+            TxtFecha.Text = obj_activos.FechaCompra
+            fecha = TxtFecha.Text
+            Año = fecha.Year
+            Año = TxtFecha.Text
+
 
             If RbnAprovado.Checked = True Then
                 TxtEstado.Text = 2
                 obj_activos.IdEstado = TxtEstado.Text
-                obj_activos.IdEstado = TxtIdActivo.Text
+                obj_activos.IdActivo = TxtIdActivo.Text
                 obj_activos.ModificaEstado()
                 RbnAprovado.Checked = False
             End If
@@ -43,7 +49,7 @@ Public Class Aprobador
             If RbnDenegado.Checked = True Then
                 TxtEstado.Text = 3
                 obj_activos.IdEstado = TxtEstado.Text
-                obj_activos.IdEstado = TxtIdActivo.Text
+                obj_activos.IdActivo = TxtIdActivo.Text
                 obj_activos.ModificaEstado()
                 RbnDenegado.Checked = False
 

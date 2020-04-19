@@ -18,7 +18,8 @@ Public Class Empleados
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text
             obj_activos.IdEmpleado = Session("IDUser")
-            obj_activos.IdEstado = 1
+            LblMostrarEstado.Text = 1
+            obj_activos.IdEstado = LblMostrarEstado.Text
             obj_activos.validarActivo()
 
             obj_activos.AgregarActivo()
@@ -51,6 +52,8 @@ Public Class Empleados
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text
             obj_activos.IdEmpleado = Session("ID")
+            LblMostrarEstado.Text = 1
+            obj_activos.IdEstado = LblMostrarEstado.Text
             obj_activos.validarActivo()
 
             obj_activos.ModificaActivo()
@@ -76,6 +79,18 @@ Public Class Empleados
             TxtNombreActivo.Text = obj_activos.NombreActivo
             TxtMontoCompra.Text = obj_activos.MontoCompra
             obj_activos.FechaCompra = Calendar1.SelectedDate
+            LblMostrarEstado.Text = obj_activos.IdEstado
+
+
+            If LblMostrarEstado.Text = 1 Then
+                LblMostrarEstado.Text = "Pendiente"
+
+            ElseIf LblMostrarEstado.Text = 2 Then
+                LblMostrarEstado.Text = "Aprovado"
+            Else
+                LblMostrarEstado.Text = "Denegado"
+            End If
+
 
         Catch ex As Exception
             Lblmensaje.Text = ex.Message
@@ -100,4 +115,6 @@ Public Class Empleados
         TxtMontoCompra.Text = ""
         TxtValorDesecho.Text = ""
     End Sub
+
+
 End Class

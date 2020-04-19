@@ -185,6 +185,24 @@ Partial Public Class Empleados
     Protected WithEvents BtnModificar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''LblEstado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblEstado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''LblMostrarEstado control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblMostrarEstado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Lblmensaje control.
     '''</summary>
     '''<remarks>

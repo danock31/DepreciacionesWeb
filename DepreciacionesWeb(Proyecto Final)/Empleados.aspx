@@ -132,10 +132,12 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Lblmensaje" runat="server"></asp:Label>
+                    <asp:Label ID="LblEstado" runat="server" Text="Estado :"></asp:Label>
+                    <asp:Label ID="LblMostrarEstado" runat="server" Text="1"></asp:Label>
                 </td>
             </tr>
         </table>
+                    <asp:Label ID="Lblmensaje" runat="server"></asp:Label>
         <p>
             <asp:Button ID="BtnActivos" runat="server" Text="Ver Activos" />
             <asp:GridView ID="GvActivos" runat="server" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
