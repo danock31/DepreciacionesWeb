@@ -41,6 +41,15 @@ Partial Public Class Solicitud
     Protected WithEvents LblUsuario As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''GvActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvActivos As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
     '''Label3 control.
     '''</summary>
     '''<remarks>
@@ -138,6 +147,15 @@ Partial Public Class Solicitud
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents TxtFecha As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Calendar1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Calendar1 As Global.System.Web.UI.WebControls.Calendar
 
     '''<summary>
     '''LblMontoCompra control.

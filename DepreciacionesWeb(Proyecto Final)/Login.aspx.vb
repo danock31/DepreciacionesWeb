@@ -11,21 +11,26 @@ Public Class Login
 
     Protected Sub BtnIniciar_Click(sender As Object, e As EventArgs) Handles BtnIniciar.Click
         Dim LeerDB As DataView = DirectCast(SqlDataSource1.Select(DataSourceSelectArguments.Empty), DataView)
+        Try
 
-        If TxtUsuario.Text <> "" And TxtContraseña.Text <> "" Then
-            If LeerDB.Count > 0 Then
-                Session("IdUser") = LeerDB(0).Item(2)
-                Session("Usuario") = LeerDB(0).Item(1)
-                Session("ID") = LeerDB(0).Item(0)
 
-                Response.Redirect("Index.aspx")
+            If TxtUsuario.Text <> "" And TxtContraseña.Text <> "" Then
+                If LeerDB.Count > 0 Then
+                    Session("IdUser") = LeerDB(0).Item(2)
+                    Session("Usuario") = LeerDB(0).Item(1)
+                    Session("ID") = LeerDB(0).Item(0)
+
+                    Response.Redirect("Index.aspx")
+                Else
+                    LblMensaje.Text = ("No existe el usuario digitado")
+                End If
             Else
-                Response.Write("No existe el usuario digitado")
+                LblMensaje.Text = ("Rellene el espacio vacio")
             End If
-        Else
-            Response.Write("Rellene el espacio vacio")
-        End If
+        Catch ex As Exception
 
+            LblMensaje.Text = ex.Message
+        End Try
     End Sub
 
     Protected Sub SqlDataSource1_Selecting(sender As Object, e As SqlDataSourceSelectingEventArgs) Handles SqlDataSource1.Selecting

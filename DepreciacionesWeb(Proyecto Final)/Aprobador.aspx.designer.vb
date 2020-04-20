@@ -41,6 +41,15 @@ Partial Public Class Aprobador
     Protected WithEvents LblUsuario As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
+    '''GvActivos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvActivos As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
     '''LblIdActivo control.
     '''</summary>
     '''<remarks>

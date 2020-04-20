@@ -8,7 +8,9 @@ Public Class Solicitud
     Dim cont As Integer = 1
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         LblUsuario.Text = Session("Usuario")
-
+        obj_activos.LeerActivos()
+        GvActivos.DataSource = obj_activos.Tabla_Activos
+        GvActivos.DataBind()
         TxtEstado.Enabled = False
         TxtMontoCompra.Enabled = False
         TxtIdEmpleado.Enabled = False
@@ -16,6 +18,8 @@ Public Class Solicitud
         TxtNombreActivo.Enabled = False
         DdlTipoActivo.Enabled = False
         TxtFecha.Enabled = False
+        TxtAños.Enabled = False
+        Calendar1.Visible = False
     End Sub
 
     Protected Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
@@ -29,10 +33,10 @@ Public Class Solicitud
             TxtMontoCompra.Text = obj_activos.MontoCompra
             TxtIdEmpleado.Text = obj_activos.IdEmpleado
             TxtEstado.Text = obj_activos.IdEstado
-            TxtFecha.Text = obj_activos.FechaCompra
+            Calendar1.SelectedDate = obj_activos.FechaCompra
+            TxtFecha.Text = Calendar1.SelectedDate.ToString("yyyy-MM-dd")
             fecha = TxtFecha.Text
-            TxtFecha.Text = fecha.Year
-            Año = TxtFecha.Text
+            Año = fecha.Year
             obj_activos.Annos = Año
 
 
@@ -68,24 +72,49 @@ Public Class Solicitud
         If TxtEstado.Text = "Aprobado" Then
             TxtEstado.Text = 2
             obj_activos.IdEstado = TxtEstado.Text
+            obj_activos.FechaCompra = TxtFecha.Text
+            obj_activos.ValorDesecho = TxtValorDesecho.Text
+            obj_activos.MontoCompra = TxtMontoCompra.Text
+            obj_activos.IdActivo = TxtIdActivo.Text
+            obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
+            obj_activos.Año = TxtAños.Text
+            obj_activos.CalcularDepreciacion()
+            TxtEstado.Text = "Aprobado"
         ElseIf TxtEstado.Text = "Denegado" Then
             TxtEstado.Text = 3
             obj_activos.IdEstado = TxtEstado.Text
+            obj_activos.FechaCompra = TxtFecha.Text
+            obj_activos.ValorDesecho = TxtValorDesecho.Text
+            obj_activos.MontoCompra = TxtMontoCompra.Text
+            obj_activos.IdActivo = TxtIdActivo.Text
+            obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
+            obj_activos.Año = TxtAños.Text
+            obj_activos.CalcularDepreciacion()
+            TxtEstado.Text = "Denegado"
         Else
             TxtEstado.Text = 1
             obj_activos.IdEstado = TxtEstado.Text
+            obj_activos.FechaCompra = TxtFecha.Text
+            obj_activos.ValorDesecho = TxtValorDesecho.Text
+            obj_activos.MontoCompra = TxtMontoCompra.Text
+            obj_activos.IdActivo = TxtIdActivo.Text
+            obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
+            obj_activos.Año = TxtAños.Text
+            obj_activos.CalcularDepreciacion()
+            TxtEstado.Text = "Pendiente"
         End If
-        obj_activos.Fecha = TxtFecha.Text
-        obj_activos.ValorDesecho = TxtValorDesecho.Text
-        obj_activos.MontoCompra = TxtMontoCompra.Text
-        obj_activos.IdActivo = TxtIdActivo.Text
-        obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
-        obj_activos.Año = TxtAños.Text
-        obj_activos.CalcularDepreciacion()
+        'obj_activos.FechaCompra = TxtFecha.Text
+        'obj_activos.ValorDesecho = TxtValorDesecho.Text
+        'obj_activos.MontoCompra = TxtMontoCompra.Text
+        'obj_activos.IdActivo = TxtIdActivo.Text
+        'obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
+        'obj_activos.Año = TxtAños.Text
+        'obj_activos.CalcularDepreciacion()
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnDepreciaciones.Click
-        obj_activos.LeerDepreciacionones()
+        obj_activos.IdActivo = TxtIdActivo.Text
+        obj_activos.LeerDepreciacionones1()
         GvDepreciaciones.DataSource = obj_activos.Tabla_Depreciaciones
         GvDepreciaciones.DataBind()
     End Sub

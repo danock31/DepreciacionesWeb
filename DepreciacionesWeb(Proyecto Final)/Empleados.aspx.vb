@@ -13,7 +13,7 @@ Public Class Empleados
         Try
             obj_activos.IdActivo = TxtIdActivo.Text
             obj_activos.NombreActivo = TxtNombreActivo.Text
-            obj_activos.FechaCompra = Calendar1.SelectedDate
+            obj_activos.FechaCompra = Calendar1.SelectedDate.ToString("yyyy-MM-dd")
             obj_activos.Tipo = DdlTipoActivo.SelectedValue
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text
@@ -47,7 +47,7 @@ Public Class Empleados
         Try
             obj_activos.IdActivo = TxtIdActivo.Text
             obj_activos.NombreActivo = TxtNombreActivo.Text
-            obj_activos.FechaCompra = Calendar1.SelectedDate
+            obj_activos.FechaCompra = Calendar1.SelectedDate.ToString("yyyy-MM-dd")
             obj_activos.Tipo = DdlTipoActivo.SelectedValue
             obj_activos.MontoCompra = TxtMontoCompra.Text
             obj_activos.ValorDesecho = TxtValorDesecho.Text

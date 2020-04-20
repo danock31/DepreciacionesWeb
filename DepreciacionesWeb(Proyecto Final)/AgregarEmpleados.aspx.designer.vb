@@ -156,4 +156,22 @@ Partial Public Class AgregarEmpleados
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents LblMensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''GvEmpleados control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvEmpleados As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''GvUsuarios control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvUsuarios As Global.System.Web.UI.WebControls.GridView
 End Class

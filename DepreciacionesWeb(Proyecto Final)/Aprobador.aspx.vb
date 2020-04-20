@@ -15,7 +15,9 @@ Public Class Aprobador
         DdlTipoActivo.Enabled = False
         TxtFecha.Enabled = False
         TxtAños.Enabled = False
-
+        obj_activos.LeerActivos()
+        GvActivos.DataSource = obj_activos.Tabla_Activos
+        GvActivos.DataBind()
 
 
 
@@ -91,6 +93,7 @@ Public Class Aprobador
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnDepreciaciones.Click
+        obj_activos.IdActivo = TxtIdActivo.Text
         obj_activos.LeerDepreciacionones()
         GvDepreciaciones.DataSource = obj_activos.Tabla_Depreciaciones
         GvDepreciaciones.DataBind()

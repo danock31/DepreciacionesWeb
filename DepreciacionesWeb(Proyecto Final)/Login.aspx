@@ -99,6 +99,7 @@
 
        <div class="col-2 text-left">
               <asp:Button type="button" class="btn btn-dark"  ID="BtnIniciar" runat="server" Text="Iniciar" />
+              <asp:Label ID="LblMensaje" runat="server"></asp:Label>
         </div>
 
        <div class="col-4">
