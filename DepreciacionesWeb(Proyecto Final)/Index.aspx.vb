@@ -9,21 +9,24 @@
 
         If LblID.Text = 1 Then
             LblID.Text = "Empleado"
-            BtnAgregraActivos.Enabled = True
+            BtnAgregraActivos.Visible = True
             BtnAprobarActivos.Visible = False
             BtnAgregarEmpleado.Visible = False
-            BtnSolicitud.Enabled = True
+            BtnSolicitud.Visible = True
+            BtnConsultas.Visible = True
         ElseIf LblID.Text = 2 Then
             LblID.Text = "Aprobador de Depreciaciones"
             BtnAgregraActivos.Visible = False
-            BtnAprobarActivos.Enabled = True
+            BtnAprobarActivos.Visible = True
             BtnAgregarEmpleado.Visible = False
             BtnSolicitud.Visible = False
+            BtnConsultas.Visible = False
         Else
             BtnAgregraActivos.Enabled = True
             BtnAprobarActivos.Enabled = True
             BtnAgregarEmpleado.Enabled = True
             BtnSolicitud.Enabled = True
+            BtnConsultas.Enabled = True
             LblID.Text = "Administrador"
         End If
 
@@ -46,7 +49,7 @@
         Response.Redirect("Solicitud.aspx")
     End Sub
 
-    Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("Login.aspx")
+    Protected Sub BtnConsultas_Click(sender As Object, e As EventArgs) Handles BtnConsultas.Click
+        Response.Redirect("Consulta.aspx")
     End Sub
 End Class

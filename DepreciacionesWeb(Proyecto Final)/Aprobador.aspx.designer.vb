@@ -41,15 +41,6 @@ Partial Public Class Aprobador
     Protected WithEvents LblUsuario As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''GvSolicitudes control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GvSolicitudes As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
     '''LblIdActivo control.
     '''</summary>
     '''<remarks>
@@ -246,33 +237,6 @@ Partial Public Class Aprobador
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents RbnDenegado As Global.System.Web.UI.WebControls.RadioButton
-
-    '''<summary>
-    '''Label1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''TxtIdDepreciacion control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents TxtIdDepreciacion As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''BtnRealizarDepreciacion control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BtnRealizarDepreciacion As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''BtnDepreciaciones control.

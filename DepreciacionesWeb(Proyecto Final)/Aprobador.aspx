@@ -51,6 +51,17 @@
         .auto-style15 {
             width: 600px;
         }
+        .auto-style16 {
+            width: 101px;
+            height: 34px;
+        }
+        .auto-style17 {
+            width: 298px;
+            height: 34px;
+        }
+        .auto-style18 {
+            height: 34px;
+        }
     </style>
 </head>
 <body>
@@ -73,25 +84,15 @@
         <div id="Titulo1">
             <asp:Label ID="LblUser" runat="server" Text="Usuario:"></asp:Label>
             <asp:Label ID="LblUsuario" runat="server" Text="Label"></asp:Label>
-            <asp:GridView ID="GvSolicitudes" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Horizontal" ForeColor="Black">
-                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-                <PagerStyle ForeColor="Black" HorizontalAlign="Right" BackColor="White" />
-                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-                <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-                <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                <SortedDescendingHeaderStyle BackColor="#242121" />
-            </asp:GridView>
             <table style="width:100%;">
                 <tr>
-                    <td class="auto-style1">
+                    <td class="auto-style16">
                         <asp:Label ID="LblIdActivo" runat="server" Text="Codigo Activo" CssClass="etiquetas"></asp:Label>
                     </td>
-                    <td class="auto-style14">
-                        <asp:TextBox ID="TxtIdActivo" runat="server" Height="16px" Width="182px"  CssClass="Textos"></asp:TextBox>
+                    <td class="auto-style17">
+                        <asp:TextBox ID="TxtIdActivo" runat="server" Height="19px" Width="182px"  CssClass="Textos"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style18">
                         <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" class="btn btn-dark"  />
                     </td>
                 </tr>
@@ -178,19 +179,16 @@
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Label ID="Label1" runat="server" Text="IdDepreciacion" CssClass="etiquetas"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style10">
-                    <asp:TextBox ID="TxtIdDepreciacion" runat="server" Width="175px"  CssClass="Textos">1</asp:TextBox>
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         <table class="auto-style11">
             <tr>
                 <td class="auto-style12">
-                    <asp:Button ID="BtnRealizarDepreciacion" runat="server" Text="Realizar Depreciacion" class="btn btn-dark"/>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style15">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>

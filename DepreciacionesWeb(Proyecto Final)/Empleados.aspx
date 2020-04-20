@@ -22,14 +22,7 @@
         .auto-style3 {
             height: 115px;
         }
-        .auto-style9 {
-            height: 23px;
-        }
         .auto-style10 {
-            width: 144px;
-        }
-        .auto-style11 {
-            height: 23px;
             width: 144px;
         }
         .auto-style12 {
@@ -39,15 +32,22 @@
         .auto-style13 {
             width: 289px;
         }
-        .auto-style14 {
-            height: 23px;
-            width: 289px;
-        }
         .auto-style15 {
             width: 294px;
         }
         .auto-style16 {
             height: 231px;
+        }
+        .auto-style17 {
+            width: 144px;
+            height: 40px;
+        }
+        .auto-style18 {
+            width: 289px;
+            height: 40px;
+        }
+        .auto-style19 {
+            height: 40px;
         }
     </style>
 </head>
@@ -59,6 +59,9 @@
     </li>
           <li class="nav-item active">
       <a class="nav-link" href="/Solicitud.aspx"> Solicitud de Depreciacion</a>
+    </li>
+                <li class="nav-item active">
+      <a class="nav-link" href="/Consulta.aspx">Consultar Depreciaciones</a>
     </li>
           <li class="nav-item active">
       <a class="nav-link" href="/Login.aspx">Cerrar Seción</a>
@@ -129,24 +132,24 @@
                     </td>
             </tr>
             <tr>
-                <td class="auto-style11">
+                <td class="auto-style17">
                     <asp:Label ID="LblMontoCompra" runat="server" Text="Monto de compra" CssClass="etiquetas"></asp:Label>
                 </td>
-                <td class="auto-style14">
+                <td class="auto-style18">
                     <asp:TextBox ID="TxtMontoCompra" runat="server" Width="158px" CssClass="Textos"></asp:TextBox>
                 </td>
-                <td class="auto-style9">
+                <td class="auto-style19">
                     <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar"  class="btn btn-dark" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style10">
+                <td class="auto-style17">
                     <asp:Label ID="Label1" runat="server" Text="Valor de desecho" CssClass="etiquetas"></asp:Label>
                 </td>
-                <td class="auto-style13">
+                <td class="auto-style18">
                     <asp:TextBox ID="TxtValorDesecho" runat="server" Width="158px" CssClass="Textos"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style19">
                     <asp:Button ID="BtnModificar" runat="server" Text="Modificar"  class="btn btn-dark" />
                 </td>
             </tr>

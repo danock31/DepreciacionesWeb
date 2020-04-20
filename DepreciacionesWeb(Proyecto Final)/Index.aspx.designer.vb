@@ -86,11 +86,11 @@ Partial Public Class Index
     Protected WithEvents BtnSolicitud As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button1 control.
+    '''BtnConsultas control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnConsultas As Global.System.Web.UI.WebControls.Button
 End Class

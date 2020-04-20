@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="AgregarEmpleados.aspx" />
     <Content Include="Aprobador.aspx" />
+    <Content Include="Consulta.aspx" />
     <Content Include="Empleados.aspx" />
     <Content Include="Estilos.css" />
     <Content Include="Index.aspx" />
@@ -126,6 +127,13 @@
     </Compile>
     <Compile Include="Aprobador.aspx.vb">
       <DependentUpon>Aprobador.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Consulta.aspx.designer.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.aspx.vb">
+      <DependentUpon>Consulta.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Empleados.aspx.designer.vb">

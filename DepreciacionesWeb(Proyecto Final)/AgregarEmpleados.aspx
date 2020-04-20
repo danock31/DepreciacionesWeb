@@ -61,6 +61,9 @@
           <li class="nav-item active">
       <a class="nav-link" href="/Aprobador.aspx">Aprobar Depreciaciones</a>
     </li>
+                <li class="nav-item active">
+      <a class="nav-link" href="/Consulta.aspx">Consultar Depreciaciones</a>
+    </li>
           <li class="nav-item active">
       <a class="nav-link" href="/Login.aspx">Cerrrar Seción</a>
     </li>

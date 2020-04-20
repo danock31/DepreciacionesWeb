@@ -45,6 +45,9 @@
     <li class="nav-item active">
       <a class="nav-link" href="/Index.aspx">Depresiaciones Web</a>
     </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Login.aspx">Cerrar Seción</a>
+    </li>
   </ul>
 </nav>
 
@@ -57,7 +60,7 @@
             <table class="auto-style9">
                 <tr>
                     <td class="auto-style3">
-                        <asp:Button ID="BtnAgregraActivos" runat="server" class="btn btn-dark"  Text="Agregar Activos" Width="176px"  />
+                        <asp:Button ID="BtnAgregraActivos" runat="server" class="btn btn-dark"  Text="Agregar Activos"   />
                     </td>
                     <td class="auto-style3">
                         <asp:Button ID="BtnAprobarActivos" runat="server" class="btn btn-dark" Text="Aprobar Consultas" />
@@ -74,14 +77,15 @@
                     <td class="auto-style8">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
+                    <td class="auto-style1">
+                        <asp:Button ID="BtnConsultas" runat="server"  class="btn btn-dark" Text="Consultar Depreciaciones" />
+                    </td>
                     <td class="auto-style1">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Cerrar  Sesión" class="btn btn-dark" />
         </div>
         <p>
             &nbsp;</p>

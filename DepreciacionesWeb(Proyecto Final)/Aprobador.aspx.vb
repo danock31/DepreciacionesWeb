@@ -15,11 +15,6 @@ Public Class Aprobador
         DdlTipoActivo.Enabled = False
         TxtFecha.Enabled = False
         TxtAños.Enabled = False
-        BtnRealizarDepreciacion.Visible = False
-
-        obj_activos.LeerSolicitudes()
-        GvSolicitudes.DataSource = obj_activos.Tabla_Solicitudes
-        GvSolicitudes.DataBind()
 
 
 
@@ -40,7 +35,6 @@ Public Class Aprobador
             TxtFecha.Text = obj_activos.FechaCompra
             fecha = TxtFecha.Text
             Año = fecha.Year
-            TxtFecha.Text = Año
             obj_activos.Annos = Año
 
 
@@ -49,6 +43,7 @@ Public Class Aprobador
                 obj_activos.IdEstado = TxtEstado.Text
                 obj_activos.IdActivo = TxtIdActivo.Text
                 obj_activos.ModificaEstado()
+                obj_activos.ModificaEstadoDepreciacion()
                 RbnAprovado.Checked = False
             End If
 
@@ -57,6 +52,8 @@ Public Class Aprobador
                 obj_activos.IdEstado = TxtEstado.Text
                 obj_activos.IdActivo = TxtIdActivo.Text
                 obj_activos.ModificaEstado()
+                obj_activos.ModificaEstadoDepreciacion()
+
                 RbnDenegado.Checked = False
 
             End If
@@ -76,14 +73,13 @@ Public Class Aprobador
 
             If TxtEstado.Text = 1 Then
                 TxtEstado.Text = "Pendiente"
-                BtnRealizarDepreciacion.Visible = False
+
 
             ElseIf TxtEstado.Text = 2 Then
                 TxtEstado.Text = "Aprobado"
-                BtnRealizarDepreciacion.Visible = True
+
             Else
                 TxtEstado.Text = "Denegado"
-                BtnRealizarDepreciacion.Visible = True
             End If
         Catch ex As Exception
             Lblmensaje.Text = ex.Message
@@ -100,16 +96,5 @@ Public Class Aprobador
         GvDepreciaciones.DataBind()
     End Sub
 
-    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles BtnRealizarDepreciacion.Click
-        If TxtEstado.Text = "Aprobado" Then
-            TxtEstado.Text = 2
-            obj_activos.IdEstado = TxtEstado.Text
-        ElseIf TxtEstado.Text = "Denegado" Then
-            TxtEstado.Text = 3
-            obj_activos.IdEstado = TxtEstado.Text
-        End If
-        obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
-        obj_activos.Año = TxtAños.Text
-            obj_activos.CalcularDepreciacion()
-    End Sub
+
 End Class

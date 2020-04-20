@@ -104,6 +104,24 @@ Partial Public Class Solicitud
     Protected WithEvents DdlTipoActivo As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
+    '''LblAños control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LblAños As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''TxtAños control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtAños As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''LblFecha control.
     '''</summary>
     '''<remarks>
@@ -176,6 +194,15 @@ Partial Public Class Solicitud
     Protected WithEvents TxtIdEmpleado As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Lblmensaje control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Lblmensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Label6 control.
     '''</summary>
     '''<remarks>
@@ -194,38 +221,47 @@ Partial Public Class Solicitud
     Protected WithEvents TxtEstado As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''LblIdSolicitud control.
+    '''Label7 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents LblIdSolicitud As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''TxtSolicitud control.
+    '''TxtIdDepreciacion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TxtSolicitud As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtIdDepreciacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''BtnSolicitud control.
+    '''BtnRealizarDepreciacion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnSolicitud As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnRealizarDepreciacion As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Lblmensaje control.
+    '''BtnDepreciaciones control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Lblmensaje As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BtnDepreciaciones As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''GvDepreciaciones control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GvDepreciaciones As Global.System.Web.UI.WebControls.GridView
 End Class
