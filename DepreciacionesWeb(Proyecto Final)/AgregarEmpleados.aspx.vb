@@ -31,7 +31,4 @@ Public Class AgregarEmpleados
         obj_empleados.CrearUsuario()
     End Sub
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("Index.aspx")
-    End Sub
 End Class

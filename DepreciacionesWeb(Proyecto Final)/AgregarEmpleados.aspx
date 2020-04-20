@@ -1,6 +1,11 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AgregarEmpleados.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.AgregarEmpleados" %>
 
 <!DOCTYPE html>
+<meta charset=”utf-8″>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href=”style/css/bootstrap.min.css” rel=”stylesheet”>
 <link href="Estilos.css" rel="stylesheet" /> 
 
 
@@ -42,6 +47,27 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/Index.aspx">Depreciaciones Web</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Empleados.aspx">Agregar Activo</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Solicitud.aspx">Solicitud de Depreciacion</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Aprobador.aspx">Aprobar Depreciaciones</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Login.aspx">Cerrrar Seción</a>
+    </li>
+   
+  </ul>
+</nav>
+
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Label1" runat="server" Text="Usuario :"></asp:Label>
@@ -99,18 +125,18 @@
                 <td class="auto-style9">
                     <asp:TextBox ID="TxtContraseña" runat="server" Width="203px" CssClass="Textos"></asp:TextBox>
                 </td>
-                <td class="auto-style10"></td>
+                <td class="auto-style10">
+                    <asp:Button ID="BtnUsuario" runat="server" Text="Crear Usuario" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style5">
-                    <asp:Button ID="Button1" runat="server" Text="Regresar" />
-                </td>
-                <td class="auto-style11">
-                    <asp:Button ID="BtnUsuario" runat="server" Text="Crear Usuario" />
-                </td>
-                <td>
                     <asp:Label ID="LblMensaje" runat="server" CssClass="etiquetas"></asp:Label>
                 </td>
+                <td class="auto-style11">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
             </tr>
         </table>
     </form>

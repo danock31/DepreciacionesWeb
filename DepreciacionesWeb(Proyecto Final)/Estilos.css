@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: darkcyan;
+    background-color: #AAA;
 }
 
 .Titulo1 {
@@ -20,7 +20,7 @@
     font-family: Arial;
     font-size: medium;
     border-style: initial;
-    color: saddlebrown;
+    color: #000000;
 }
 
 .padre {

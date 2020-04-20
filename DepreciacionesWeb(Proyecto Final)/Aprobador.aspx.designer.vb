@@ -266,13 +266,13 @@ Partial Public Class Aprobador
     Protected WithEvents TxtIdDepreciacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Button3 control.
+    '''BtnRealizarDepreciacion control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Button3 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents BtnRealizarDepreciacion As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''BtnDepreciaciones control.
@@ -284,15 +284,6 @@ Partial Public Class Aprobador
     Protected WithEvents BtnDepreciaciones As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Button2 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''GvDepreciaciones control.
     '''</summary>
     '''<remarks>
@@ -300,13 +291,4 @@ Partial Public Class Aprobador
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents GvDepreciaciones As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''Button1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
 End Class

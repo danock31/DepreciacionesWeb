@@ -15,7 +15,7 @@ Public Class Aprobador
         DdlTipoActivo.Enabled = False
         TxtFecha.Enabled = False
         TxtAños.Enabled = False
-
+        BtnRealizarDepreciacion.Visible = False
 
         obj_activos.LeerSolicitudes()
         GvSolicitudes.DataSource = obj_activos.Tabla_Solicitudes
@@ -71,18 +71,19 @@ Public Class Aprobador
                 TxtAños.Text = 7
             End If
 
-            obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
-            obj_activos.Año = TxtAños.Text
-            obj_activos.CalcularDepreciacion()
+
 
 
             If TxtEstado.Text = 1 Then
                 TxtEstado.Text = "Pendiente"
+                BtnRealizarDepreciacion.Visible = False
 
             ElseIf TxtEstado.Text = 2 Then
-                TxtEstado.Text = "Aprovado"
+                TxtEstado.Text = "Aprobado"
+                BtnRealizarDepreciacion.Visible = True
             Else
                 TxtEstado.Text = "Denegado"
+                BtnRealizarDepreciacion.Visible = True
             End If
         Catch ex As Exception
             Lblmensaje.Text = ex.Message
@@ -99,11 +100,16 @@ Public Class Aprobador
         GvDepreciaciones.DataBind()
     End Sub
 
-    Protected Sub Button1_Click1(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("Login.aspx")
-    End Sub
-
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Response.Redirect("Index.aspx")
+    Protected Sub Button3_Click(sender As Object, e As EventArgs) Handles BtnRealizarDepreciacion.Click
+        If TxtEstado.Text = "Aprobado" Then
+            TxtEstado.Text = 2
+            obj_activos.IdEstado = TxtEstado.Text
+        ElseIf TxtEstado.Text = "Denegado" Then
+            TxtEstado.Text = 3
+            obj_activos.IdEstado = TxtEstado.Text
+        End If
+        obj_activos.IdDepreciacion = TxtIdDepreciacion.Text
+        obj_activos.Año = TxtAños.Text
+            obj_activos.CalcularDepreciacion()
     End Sub
 End Class

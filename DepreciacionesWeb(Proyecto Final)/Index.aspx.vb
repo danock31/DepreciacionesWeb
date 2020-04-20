@@ -5,19 +5,20 @@
         LblUsuario.Text = Session("Usuario")
 
         LblID.Text = Session("ID")
+        LblID.Visible = False
 
         If LblID.Text = 1 Then
             LblID.Text = "Empleado"
             BtnAgregraActivos.Enabled = True
-            BtnAprobarActivos.Enabled = False
-            BtnAgregarEmpleado.Enabled = False
+            BtnAprobarActivos.Visible = False
+            BtnAgregarEmpleado.Visible = False
             BtnSolicitud.Enabled = True
         ElseIf LblID.Text = 2 Then
             LblID.Text = "Aprobador de Depreciaciones"
-            BtnAgregraActivos.Enabled = False
+            BtnAgregraActivos.Visible = False
             BtnAprobarActivos.Enabled = True
-            BtnAgregarEmpleado.Enabled = False
-            BtnSolicitud.Enabled = False
+            BtnAgregarEmpleado.Visible = False
+            BtnSolicitud.Visible = False
         Else
             BtnAgregraActivos.Enabled = True
             BtnAprobarActivos.Enabled = True

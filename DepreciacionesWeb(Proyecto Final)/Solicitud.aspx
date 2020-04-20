@@ -1,6 +1,11 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Solicitud.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.Solicitud" %>
 
 <!DOCTYPE html>
+<meta charset=”utf-8″>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href=”style/css/bootstrap.min.css” rel=”stylesheet”>
 <link href="Estilos.css" rel="stylesheet" /> 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -40,6 +45,26 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/Index.aspx">Depreciaciones Web</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Empleados.aspx">Agregar Activos</a>
+    </li>
+          <li class="nav-item active">
+      <a class="nav-link" href="/Login.aspx">Cerrar Seción</a>
+    </li>
+   
+  </ul>
+</nav>
+
+
+
+
+
+
     <form id="form1" runat="server">
         <div>
         <div>
@@ -54,7 +79,7 @@
                         <asp:TextBox ID="TxtIdActivo" runat="server" Height="16px" Width="182px" CssClass="Textos"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" />
+                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" class="btn btn-dark"  />
                     </td>
                 </tr>
                 <tr>
@@ -138,7 +163,7 @@
                     <asp:TextBox ID="TxtSolicitud" runat="server" CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:Button ID="BtnSolicitud" runat="server" Text="Enviar Solicitud" />
+                    <asp:Button ID="BtnSolicitud" runat="server" Text="Enviar Solicitud" class="btn btn-dark"  />
                     <asp:Label ID="Lblmensaje" runat="server" CssClass="etiquetas"></asp:Label>
                 </td>
             </tr>

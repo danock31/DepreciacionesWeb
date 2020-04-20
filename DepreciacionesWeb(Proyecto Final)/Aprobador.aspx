@@ -1,6 +1,11 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Aprobador.aspx.vb" Inherits="DepreciacionesWeb_Proyecto_Final_.Aprobador" %>
 
 <!DOCTYPE html>
+<meta charset=”utf-8″>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href=”style/css/bootstrap.min.css” rel=”stylesheet”>
 <link href="Estilos.css" rel="stylesheet" /> 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -49,20 +54,34 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/index.aspx">Depreciaciones Web</a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="/Login.aspx">Cerrar Seción</a>
+    </li>
+   
+  </ul>
+</nav>
+
+
+
+
     <form id="form1" runat="server">
         <div id="Titulo1">
             <asp:Label ID="LblUser" runat="server" Text="Usuario:"></asp:Label>
             <asp:Label ID="LblUsuario" runat="server" Text="Label"></asp:Label>
-            <asp:GridView ID="GvSolicitudes" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
-                <FooterStyle BackColor="White" ForeColor="#333333" />
-                <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
-                <PagerStyle ForeColor="White" HorizontalAlign="Center" BackColor="#336666" />
-                <RowStyle BackColor="White" ForeColor="#333333" />
-                <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+            <asp:GridView ID="GvSolicitudes" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Horizontal" ForeColor="Black">
+                <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                <PagerStyle ForeColor="Black" HorizontalAlign="Right" BackColor="White" />
+                <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
                 <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                <SortedAscendingHeaderStyle BackColor="#487575" />
+                <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
                 <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                <SortedDescendingHeaderStyle BackColor="#275353" />
+                <SortedDescendingHeaderStyle BackColor="#242121" />
             </asp:GridView>
             <table style="width:100%;">
                 <tr>
@@ -73,7 +92,7 @@
                         <asp:TextBox ID="TxtIdActivo" runat="server" Height="16px" Width="182px"  CssClass="Textos"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" style="height: 26px" />
+                        <asp:Button ID="BtnBuscar" runat="server" Text="Buscar" class="btn btn-dark"  />
                     </td>
                 </tr>
                 <tr>
@@ -153,8 +172,8 @@
                     <asp:TextBox ID="TxtEstado" runat="server" Width="175px"  CssClass="Textos"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RadioButton ID="RbnAprovado" runat="server" Text="Aprovado" />
-                    <asp:RadioButton ID="RbnDenegado" runat="server" Text="Denegado" />
+                    <asp:RadioButton ID="RbnAprovado" runat="server" Text="Aprovado" class="btn btn-dark"/>
+                    <asp:RadioButton ID="RbnDenegado" runat="server" Text="Denegado" class="btn btn-dark"/>
                 </td>
             </tr>
             <tr>
@@ -170,38 +189,35 @@
         <table class="auto-style11">
             <tr>
                 <td class="auto-style12">
-                    <asp:Button ID="Button3" runat="server" Text="Realizar Depreciacion" />
+                    <asp:Button ID="BtnRealizarDepreciacion" runat="server" Text="Realizar Depreciacion" class="btn btn-dark"/>
                 </td>
                 <td class="auto-style15">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style12">
-                    <asp:Button ID="BtnDepreciaciones" runat="server" Text="Ver Depreciacion" />
+                    <asp:Button ID="BtnDepreciaciones" runat="server" Text="Ver Depreciacion" class="btn btn-dark" />
                 </td>
                 <td class="auto-style15">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" Height="26px" Text="Regresar" Width="119px" />
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style12">
-                    <asp:GridView ID="GvDepreciaciones" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal">
-                        <FooterStyle BackColor="White" ForeColor="#333333" />
-                        <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
-                        <RowStyle BackColor="White" ForeColor="#333333" />
-                        <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                    <asp:GridView ID="GvDepreciaciones" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Horizontal" ForeColor="Black">
+                        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+                        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+                        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
                         <SortedAscendingCellStyle BackColor="#F7F7F7" />
-                        <SortedAscendingHeaderStyle BackColor="#487575" />
+                        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
                         <SortedDescendingCellStyle BackColor="#E5E5E5" />
-                        <SortedDescendingHeaderStyle BackColor="#275353" />
+                        <SortedDescendingHeaderStyle BackColor="#242121" />
                     </asp:GridView>
                 </td>
                 <td class="auto-style15">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="Cerrar Seción" />
-                </td>
+                    &nbsp;</td>
             </tr>
         </table>
     </form>

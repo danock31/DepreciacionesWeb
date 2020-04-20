@@ -4,8 +4,8 @@ Public Class Empleados
     Dim obj_activos As New Clase_Activo
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         LblUsuario.Text = Session("Usuario")
-        BtnEliminar.Enabled = False
-        BtnModificar.Enabled = False
+        BtnEliminar.Visible = False
+        BtnModificar.Visible = False
 
     End Sub
 
@@ -84,19 +84,25 @@ Public Class Empleados
 
             If LblMostrarEstado.Text = 1 Then
                 LblMostrarEstado.Text = "Pendiente"
+                BtnModificar.Visible = True
+                BtnEliminar.Visible = True
 
             ElseIf LblMostrarEstado.Text = 2 Then
                 LblMostrarEstado.Text = "Aprovado"
+                BtnModificar.Visible = False
+                BtnEliminar.Visible = False
             Else
                 LblMostrarEstado.Text = "Denegado"
+                BtnModificar.Visible = True
+                BtnEliminar.Visible = True
             End If
 
 
         Catch ex As Exception
             Lblmensaje.Text = ex.Message
         End Try
-        BtnModificar.Enabled = True
-        BtnEliminar.Enabled = True
+
+
         Lblmensaje.Text = ""
 
     End Sub
@@ -114,13 +120,5 @@ Public Class Empleados
         DdlTipoActivo.SelectedIndex = 0
         TxtMontoCompra.Text = ""
         TxtValorDesecho.Text = ""
-    End Sub
-
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("Login.aspx")
-    End Sub
-
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Response.Redirect("Index.aspx")
     End Sub
 End Class
